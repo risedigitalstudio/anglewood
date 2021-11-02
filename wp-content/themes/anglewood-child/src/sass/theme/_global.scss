@@ -1,0 +1,132 @@
+$light: #f7f2ee;
+$lightGrey: #bcb4b2;
+$darkGrey: #6e6a67;
+//$black: #26211d;
+$black: #000;
+$wood: #775740;
+
+//
+//@font-face {
+//    font-family: "Gilmer Outline";
+//    src: url("../fonts/gilmer/gilmer-outline/Gilmer-Outline.eot");
+//    src: url("../fonts/gilmer/gilmer-outline/Gilmer-Outline.eot?#iefix") format("embedded-opentype"), 
+//    url("../fonts/gilmer/gilmer-outline/Gilmer-Outline.svg") format("svg"), 
+//    url("../fonts/gilmer/gilmer-outline/Gilmer-Outline.woff") format("woff"), 
+//    url("../fonts/gilmer/gilmer-outline/Gilmer-Outline.ttf") format("ttf");
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+
+@font-face {
+    font-family: "Gilmer Light";
+    src: url("../fonts/gilmer/gilmer-light/Gilmer-Light.eot");
+    src: url("../fonts/gilmer/gilmer-light/Gilmer-Light.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/gilmer/gilmer-light/Gilmer-Light.svg") format("svg"), 
+    url("../fonts/gilmer/gilmer-light/Gilmer-Light.woff") format("woff"), 
+    url("../fonts/gilmer/gilmer-light/Gilmer-Light.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: "Gilmer Bold";
+    src: url("../fonts/gilmer/gilmer-bold/Gilmer-Bold.eot");
+    src: url("../fonts/gilmer/gilmer-bold/Gilmer-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/gilmer/gilmer-bold/Gilmer-Bold.svg") format("svg"), 
+    url("../fonts/gilmer/gilmer-bold/Gilmer-Bold.woff") format("woff"), 
+    url("../fonts/gilmer/gilmer-bold/Gilmer-Bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+@font-face {
+    font-family: "Dallas Bold";
+    src: url("../fonts/dallas/dallas-bold/Dallas-Bold.eot");
+    src: url("../fonts/dallas/dallas-bold/Dallas-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/dallas/dallas-bold/Dallas-Bold.svg") format("svg"), 
+    url("../fonts/dallas/dallas-bold/Dallas-Bold.woff") format("woff"), 
+    url("../fonts/dallas/dallas-bold/Dallas-Bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+@font-face {
+    font-family: "Dallas Light";
+    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot");
+    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/dallas/dallas-light/Dallas-Light.svg") format("svg"), 
+    url("../fonts/dallas/dallas-light/Dallas-Light.woff") format("woff"), 
+    url("../fonts/dallas/dallas-light/Dallas-Light.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+body {
+    background: $light;
+    font-family: 'Gilmer Light', sans-serif;
+    color: $black;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: .03rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Dallas Bold', sans-serif;
+    letter-spacing: -15%;
+    color: $black;
+}
+
+h1 {
+    font-size: 82px;
+    line-height: 66px;
+}
+
+.rel {
+    position: relative;
+}
+
+.flex-height {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.full {
+    float: left;
+    width: 100%;
+}
+
+.sec-pad-lg {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.sec-pad-lg-top {
+    padding-top: 150px;
+}
+
+.sec-pad-lg-bot {
+    padding-bottom: 150px;
+}
+
+
+.sec-pad {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.sec-pad-top {
+    padding-top: 75px;
+}
+
+.sec-pad-bot {
+    padding-bottom: 75px;
+}

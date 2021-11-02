@@ -1,0 +1,20 @@
+.navbar-dark .navbar-brand {
+    width: 210px;
+    img {
+        width: 100%;
+    }
+}
+
+.bg-primary {
+    background-color: $black !important;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $light; 
+    text-transform: uppercase;
+    font-family: 'Gilmer Bold', sans-serif;
+    font-size: 14px;
+}

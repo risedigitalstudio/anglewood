@@ -1,0 +1,12 @@
+footer#main-footer {
+    background: $black;
+    color: $light;
+    font-size: 15px;
+    line-height: 25px;
+    h2 {
+        text-transform: uppercase;
+        color: $light;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+}

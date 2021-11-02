@@ -1,0 +1,79 @@
+.hero {
+    background-image: url(../img/hero4.jpg);
+    background-size: cover;
+    background-position: center bottom;    
+    padding: 380px 0 100px;
+    p {
+        font-size: 24px;
+        font-family: 'Gilmer Bold', sans-serif;
+        color: $darkGrey;
+        margin-top: 20px;
+    }
+}
+
+.home-intro {
+    h2 {
+        font-family: 'Dallas Bold', sans-serif;
+        max-width: 370px; 
+    }
+}
+
+.intro-p-wrap {
+    padding-left: 80px;
+}
+
+.vertical-line {
+    height: 250px;
+    width: 1px;
+    position: absolute;
+    background: $darkGrey;
+    top: -50px;
+    &.dropped {
+        margin-top: 35px;
+    }
+    &.right {
+        right: 10px;
+    }
+    &.left {
+        left: 10px;
+    }
+}
+
+.home-services {
+
+}
+
+.slider-section {
+    background-image: url(../img/woodbg.jpg);
+    background-size: cover;
+    color: $light;
+    h2 {
+        color: $light;
+    }
+}
+
+.recent-projects-slider {
+    border-left: 1px solid $light;
+    padding-left: 55px;    
+}
+
+
+.cta-connect {
+    h3 {
+        font-family: 'Gilmer Bold', sans-serif;
+        letter-spacing: normal;
+        font-size: 18px;
+    }
+}
+
+
+.cta-connect-box {
+    background: $lightGrey;
+    padding: 80px;
+    h2 {
+        text-align: center;
+    }
+    .cta-sec {
+        margin-bottom: 25px;
+    }
+}
