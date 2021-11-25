@@ -9,4 +9,45 @@ footer#main-footer {
         font-size: 16px;
         margin-bottom: 18px;
     }
+    p {
+        color: $light;
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    a {
+        color: $light;
+        &:hover {
+            text-decoration: underline;
+            i {
+                color: $purple;
+            }
+        }
+        &.no-underline {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .custom-logo-link img {
+        width: 270px;
+        margin-bottom: 0px;
+        top: -20px;
+        position: relative;
+    }
+    .social {
+        a {
+            font-size: 20px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    .one {
+        max-width: 34%;
+    }
 }

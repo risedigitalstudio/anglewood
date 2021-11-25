@@ -1,0 +1,42 @@
+.intro-p {
+    font-size: 22px;
+    line-height: 32px;
+//    font-family: "Gilmer Bold";
+    color: $light;
+}
+.timeline-wrap {
+    background: $light;
+}
+
+.team-sec {
+    background: $darkGrey;
+    color: $light;
+    h2 {
+        color: $light;
+    }
+}
+.team-member {
+    margin-bottom: 45px;
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 25px;
+        margin: 3px;
+        color: $light;
+    }
+    h4 {
+        font-size: 17px;
+        color: $light;
+    }
+    p.deets {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: normal;
+        color: $lightGrey;
+        span {
+            font-family: "Gilmer Bold";
+        }
+    }
+}

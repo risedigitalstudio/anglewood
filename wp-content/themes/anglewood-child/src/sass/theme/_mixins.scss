@@ -1,0 +1,48 @@
+@mixin default-link {
+    font-size: 15px;
+    font-family: 'Gilmer Bold', sans-serif;
+    text-transform: uppercase;
+    span {
+        transition: 0.2s all;
+        position: relative;
+        top: -2px;
+        left: 2px;
+    }
+    &:hover {
+        transition: 0.2s all;
+        text-decoration: none;
+        color: $purple !important;
+        span {
+            left: 8px;
+        }
+    }
+    &.light {
+        color: $light;
+        &:hover {
+            color: $light !important;
+        }
+    }
+}
+
+.default-link {
+    @include default-link;
+}
+
+@mixin small-title {
+    font-size: 18px;
+}
+
+.small-title {
+    @include small-title;
+}
+
+@mixin flex-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-height {
+    @include flex-height;
+}

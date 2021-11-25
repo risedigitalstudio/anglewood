@@ -4,6 +4,7 @@ $darkGrey: #6e6a67;
 //$black: #26211d;
 $black: #000;
 $wood: #775740;
+$purple: #743dbc;
 
 //
 //@font-face {
@@ -129,4 +130,14 @@ h1 {
 
 .sec-pad-bot {
     padding-bottom: 75px;
+}
+
+
+.hero-padding {
+    padding: 225px 0 150px;
+    background-image: url(../img/woodbg.jpg);
+    background-size: cover;
+    h1 {
+        color: $light;
+    }
 }

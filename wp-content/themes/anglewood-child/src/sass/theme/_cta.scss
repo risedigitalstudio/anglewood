@@ -1,0 +1,11 @@
+.cta-sec {
+    &.light {
+        background: $light;
+        a {
+            color: $black;
+        }
+    }
+    &.dark {
+        background: $darkGrey;
+    }
+}

@@ -20,6 +20,9 @@
 
 .intro-p-wrap {
     padding-left: 80px;
+    a {
+        color: $black;
+    }
 }
 
 .vertical-line {
@@ -39,10 +42,6 @@
     }
 }
 
-.home-services {
-
-}
-
 .slider-section {
     background-image: url(../img/woodbg.jpg);
     background-size: cover;
@@ -50,11 +49,46 @@
     h2 {
         color: $light;
     }
+    .recent-proj-view-all {
+        margin-bottom: 35px;
+    }
 }
 
 .recent-projects-slider {
     border-left: 1px solid $light;
-    padding-left: 55px;    
+    padding-left: 55px;   
+    h3 {
+        font-size: 21px;
+        margin: 0;
+    }
+    .slider-cat {
+        margin: 2px 0;
+        a {
+            color: $lightGrey;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: "Gilmer Bold", sans-serif;
+        }
+    }
+    .single-table {
+        margin-right: 15px;
+    }
+}
+
+.arrows-inner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    span {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    img {
+        width: 23px;
+        margin: 0 15px;
+    }
 }
 
 
@@ -76,4 +110,74 @@
     .cta-sec {
         margin-bottom: 25px;
     }
+}
+
+.home-services {
+//    background: $lightGrey;
+    color: $black;
+    h2 {
+        color: $black;
+    }
+    ul.home-service-list {
+        list-style-type: none;
+        padding: 0;
+        z-index: 1;
+        li {
+            margin-bottom: 10px;
+            transition: 0.2s all;
+            a {
+                font-family: 'Dallas Bold', sans-serif;
+                letter-spacing: -15%;
+                color: $black;
+                font-size: 48px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+//            &:hover {
+//                margin-left: 12px;
+//            }
+        }
+    }
+    .default-link {
+        color: $black;
+    }
+}
+
+.home-service-hover-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.home-contact {
+    background: $darkGrey;
+    color: $light;
+    h2 {
+        color: $light;
+    }
+    a {
+        color: $light;
+    }
+    span {
+        display: block;
+        margin-bottom: 5px;
+        i {
+            width: 20px;
+            margin-right: 8px;
+            float: left;
+            text-align: center;
+            position: relative;
+            top: 5px;
+            font-size: 17px;
+        }
+    }
+}
+
+.home-contact-info {
+    @include flex-height;
+    margin-left: 75px;
 }
