@@ -54,16 +54,16 @@ $purple: #743dbc;
 } 
 
 
-@font-face {
-    font-family: "Dallas Light";
-    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot");
-    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot?#iefix") format("embedded-opentype"), 
-    url("../fonts/dallas/dallas-light/Dallas-Light.svg") format("svg"), 
-    url("../fonts/dallas/dallas-light/Dallas-Light.woff") format("woff"), 
-    url("../fonts/dallas/dallas-light/Dallas-Light.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-} 
+//@font-face {
+//    font-family: "Dallas Light";
+//    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot");
+//    src: url("../fonts/dallas/dallas-light/Dallas-Light.eot?#iefix") format("embedded-opentype"), 
+//    url("../fonts/dallas/dallas-light/Dallas-Light.svg") format("svg"), 
+//    url("../fonts/dallas/dallas-light/Dallas-Light.woff") format("woff"), 
+//    url("../fonts/dallas/dallas-light/Dallas-Light.ttf") format("ttf");
+//    font-weight: normal;
+//    font-style: normal;
+//} 
 
 //@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 //@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
@@ -80,13 +80,13 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Dallas Bold', sans-serif;
-    letter-spacing: -15%;
     color: $black;
 }
 
 h1 {
-    font-size: 82px;
-    line-height: 66px;
+    font-size: 75px;
+    line-height: 65px;
+    letter-spacing: normal;
 }
 
 .rel {

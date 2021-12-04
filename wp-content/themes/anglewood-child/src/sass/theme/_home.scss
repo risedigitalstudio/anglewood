@@ -2,7 +2,7 @@
     background-image: url(../img/hero4.jpg);
     background-size: cover;
     background-position: center bottom;    
-    padding: 380px 0 100px;
+    padding: 480px 0 100px;
     p {
         font-size: 24px;
         font-family: 'Gilmer Bold', sans-serif;
@@ -14,7 +14,7 @@
 .home-intro {
     h2 {
         font-family: 'Dallas Bold', sans-serif;
-        max-width: 370px; 
+        max-width: 340px; 
     }
 }
 
@@ -152,6 +152,9 @@
     z-index: 0;
 }
 
+.social-insta {
+
+}
 
 .home-contact {
     background: $darkGrey;

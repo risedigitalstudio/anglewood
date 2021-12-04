@@ -4,8 +4,21 @@
 //    font-family: "Gilmer Bold";
     color: $light;
 }
+
 .timeline-wrap {
     background: $light;
+}
+
+.founder-sec {
+    background-image: url(../img/woodbg.jpg);
+    background-size: cover;
+    color: $light;
+    h2, h3, h4 {
+        color: $light;
+    }
+    h4 {
+        font-size: 17px;
+    }
 }
 
 .team-sec {
@@ -15,8 +28,8 @@
         color: $light;
     }
 }
+
 .team-member {
-    margin-bottom: 45px;
     img {
         width: 100%;
         margin-bottom: 10px;

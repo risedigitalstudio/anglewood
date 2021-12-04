@@ -1,0 +1,82 @@
+.faq {
+    .accordian-container {
+        width: 100%;
+        position: relative;
+        height: auto;
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-top: 1px solid #ddd;
+        }
+    }
+
+    .set {
+        position: relative;
+        width: 85%;
+        height: auto;
+        .content {
+            float: left;
+            width: 90%;
+        }
+        .set-a {
+            float: left;
+            width: 100%;
+            .title {
+                width: 85%;
+                float: left;
+            }
+            &.active {
+                .title {
+                    color: $purple;
+                }
+            }
+            display: block;
+            padding: 22px 0;
+            text-decoration: none;
+//            color: $beige;
+            border-top: 1px solid #e0e0e0;
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            font-size: 21px;
+            color: $black;
+
+            i {
+                float: right;
+                position: relative;
+                right: 5px;
+                width: 5%;
+            }
+
+            &.active {
+//                color: $accent;
+            }
+        }
+    }
+
+
+    .content {
+        display: none;
+        p {
+            padding: 8px 0 25px 0;
+            margin: 0 45px 0 0;
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .faq .bigbold {
+        font-size: 17px;
+    }
+    .faq .content p {
+        margin: 0;
+    }
+    .faq .set .set-a {
+        font-size: 20px;
+    }
+}

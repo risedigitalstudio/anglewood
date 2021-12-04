@@ -19,30 +19,30 @@ defined( 'ABSPATH' ) || exit;
         <div class="flex">
             <div class="one">
                 <?php the_custom_logo(); ?>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non deserunt pariatur quae quas eum ipsum cumque necessitatibus, ex iure corporis.</p>
+                <p>Leaders in custom live edge slab wood and epoxy creations.</p>
             </div>
             <div class="one">
                 <h2>Services</h2>
-                
-<?php
-$args = array (
-'post_type' => array ('aw_services'),
-'orderby' => array( 'menu_order' => 'ASC'),
-'posts_per_page' => -1
-);
-$serviceQuery = new WP_Query($args);
-?>
 
-<ul>
-                
-<?php while ( $serviceQuery->have_posts() ) : $serviceQuery->the_post();?>
-            
-        <li><?php echo the_title(); ?></li>
+                    <?php
+                    $args = array (
+                    'post_type' => array ('aw_services'),
+                    'orderby' => array( 'menu_order' => 'DESC'),
+                    'posts_per_page' => -1
+                    );
+                    $serviceQuery = new WP_Query($args);
+                    ?>
 
-<?php endwhile; ?>
-            
-    <?php wp_reset_postdata(); ?>   
-</ul>             
+                    <ul>
+
+                    <?php while ( $serviceQuery->have_posts() ) : $serviceQuery->the_post();?>
+
+                            <li><?php echo the_title(); ?></li>
+
+                    <?php endwhile; ?>
+
+                        <?php wp_reset_postdata(); ?>   
+                    </ul>             
                 
             </div>
             <div class="one">

@@ -1,0 +1,37 @@
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid $wood;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.service-info {
+    padding: 35px;
+    background: $wood;
+    color: #fff;
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            color: #fff;
+        }
+    }
+    p {
+        margin: 0;
+    }
+    h3 {
+        color: $light;
+    }
+}
+
+
+
+@include media-breakpoint-up(sm) {
+    .service-info {
+        min-height: 333px;
+    }
+}

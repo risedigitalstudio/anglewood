@@ -14989,13 +14989,6 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Dallas Light";
-  src: url("../fonts/dallas/dallas-light/Dallas-Light.eot");
-  src: url("../fonts/dallas/dallas-light/Dallas-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/dallas/dallas-light/Dallas-Light.svg") format("svg"), url("../fonts/dallas/dallas-light/Dallas-Light.woff") format("woff"), url("../fonts/dallas/dallas-light/Dallas-Light.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   background: #f7f2ee;
   font-family: "Gilmer Light", sans-serif;
@@ -15007,13 +15000,13 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: "Dallas Bold", sans-serif;
-  letter-spacing: -15%;
   color: #000;
 }
 
 h1 {
-  font-size: 82px;
-  line-height: 66px;
+  font-size: 75px;
+  line-height: 65px;
+  letter-spacing: normal;
 }
 
 .rel {
@@ -15142,7 +15135,7 @@ h1 {
   background-image: url(../img/hero4.jpg);
   background-size: cover;
   background-position: center bottom;
-  padding: 380px 0 100px;
+  padding: 480px 0 100px;
 }
 .hero p {
   font-size: 24px;
@@ -15153,7 +15146,7 @@ h1 {
 
 .home-intro h2 {
   font-family: "Dallas Bold", sans-serif;
-  max-width: 370px;
+  max-width: 340px;
 }
 
 .intro-p-wrap {
@@ -15322,6 +15315,18 @@ h1 {
   background: #f7f2ee;
 }
 
+.founder-sec {
+  background-image: url(../img/woodbg.jpg);
+  background-size: cover;
+  color: #f7f2ee;
+}
+.founder-sec h2, .founder-sec h3, .founder-sec h4 {
+  color: #f7f2ee;
+}
+.founder-sec h4 {
+  font-size: 17px;
+}
+
 .team-sec {
   background: #6e6a67;
   color: #f7f2ee;
@@ -15330,9 +15335,6 @@ h1 {
   color: #f7f2ee;
 }
 
-.team-member {
-  margin-bottom: 45px;
-}
 .team-member img {
   width: 100%;
   margin-bottom: 10px;
@@ -15392,7 +15394,7 @@ li.timeline-item h2 {
   color: #000;
 }
 li.timeline-item .text-gray {
-  color: #775740;
+  color: #000;
   font-family: "Dallas Bold";
 }
 
@@ -15431,6 +15433,125 @@ span.number {
   margin-bottom: 75px;
 }
 
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid #775740;
+  position: absolute;
+  right: 0;
+  top: 70px;
+}
+
+.service-info {
+  padding: 35px;
+  background: #775740;
+  color: #fff;
+}
+.service-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+.service-info a:hover {
+  color: #fff;
+}
+.service-info p {
+  margin: 0;
+}
+.service-info h3 {
+  color: #f7f2ee;
+}
+
+@media (min-width: 576px) {
+  .service-info {
+    min-height: 333px;
+  }
+}
+.faq .accordian-container {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.faq .accordian-container h2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-top: 1px solid #ddd;
+}
+.faq .set {
+  position: relative;
+  width: 85%;
+  height: auto;
+}
+.faq .set .content {
+  float: left;
+  width: 90%;
+}
+.faq .set .set-a {
+  float: left;
+  width: 100%;
+  display: block;
+  padding: 22px 0;
+  text-decoration: none;
+  border-top: 1px solid #e0e0e0;
+  transition: all 0.2s linear;
+  font-size: 21px;
+  color: #000;
+}
+.faq .set .set-a .title {
+  width: 85%;
+  float: left;
+}
+.faq .set .set-a.active .title {
+  color: #743dbc;
+}
+.faq .set .set-a i {
+  float: right;
+  position: relative;
+  right: 5px;
+  width: 5%;
+}
+.faq .content {
+  display: none;
+}
+.faq .content p {
+  padding: 8px 0 25px 0;
+  margin: 0 45px 0 0;
+  font-size: 17px;
+}
+
+@media (max-width: 767px) {
+  .faq .bigbold {
+    font-size: 17px;
+  }
+
+  .faq .content p {
+    margin: 0;
+  }
+
+  .faq .set .set-a {
+    font-size: 20px;
+  }
+}
+.contact-info .group {
+  font-family: "Dallas Bold", sans-serif;
+}
+.contact-info .group span {
+  font-family: "Gilmer Light", sans-serif;
+  display: block;
+}
+.contact-info .group a {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .contact-info {
+    margin-top: 25px;
+  }
+}
 .cta-sec.light {
   background: #f7f2ee;
 }
