@@ -10,6 +10,9 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+
+$pageID = get_the_ID();
+
 ?>
 
 
@@ -73,6 +76,15 @@ defined( 'ABSPATH' ) || exit;
 </footer>
 
 <?php wp_footer(); ?>
+
+
+
+<script>
+    
+
+
+</script>
+
 
 </body>
 

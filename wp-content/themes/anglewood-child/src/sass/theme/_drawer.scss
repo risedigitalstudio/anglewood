@@ -1,0 +1,65 @@
+.header-drawer {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background: $black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    .container-fluid {
+        padding: 20px;
+    }
+    .custom-logo-link {
+        width: 250px;
+        float: left;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#drawerClose {
+    margin: 0 0 !important; 
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    z-index: 9999;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.drawer-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.mainNavItems {
+    #main-menu {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+        width: 80%;
+        li {
+            a {
+                font-family: 'Dallas Bold', sans-serif;
+                letter-spacing: -15%;
+                color: $white;
+                font-size: 6vw;
+                line-height: 4.5vw;
+                &:hover {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}

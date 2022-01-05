@@ -1,0 +1,28 @@
+.subNavSticky {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+}
+.sub-nav-tables-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    a {
+        background: $purple;
+        color: #fff;
+        padding: 12px 2px;
+        width: 20%;
+        text-align: center;
+        transition: 0.2s all;
+        &.activeNav {
+            background: darken($purple, 15%);
+            color: #fff;
+            text-decoration: none;
+        }
+        &:hover {
+            background: darken($purple, 15%);
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

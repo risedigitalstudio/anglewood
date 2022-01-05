@@ -2,94 +2,96 @@
     background-image: url(../img/hero4.jpg);
     background-size: cover;
     background-position: center bottom;    
-    padding: 480px 0 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     p {
         font-size: 24px;
-        font-family: 'Gilmer Bold', sans-serif;
-        color: $darkGrey;
+        font-family: 'Gilmer Light', sans-serif;
         margin-top: 20px;
     }
 }
-
-.home-intro {
-    h2 {
-        font-family: 'Dallas Bold', sans-serif;
-        max-width: 340px; 
-    }
-}
-
-.intro-p-wrap {
-    padding-left: 80px;
-    a {
-        color: $black;
-    }
-}
-
-.vertical-line {
-    height: 250px;
-    width: 1px;
-    position: absolute;
-    background: $darkGrey;
-    top: -50px;
-    &.dropped {
-        margin-top: 35px;
-    }
-    &.right {
-        right: 10px;
-    }
-    &.left {
-        left: 10px;
-    }
-}
-
-.slider-section {
-    background-image: url(../img/woodbg.jpg);
-    background-size: cover;
-    color: $light;
-    h2 {
-        color: $light;
-    }
-    .recent-proj-view-all {
-        margin-bottom: 35px;
-    }
-}
-
-.recent-projects-slider {
-    border-left: 1px solid $light;
-    padding-left: 55px;   
-    h3 {
-        font-size: 21px;
-        margin: 0;
-    }
-    .slider-cat {
-        margin: 2px 0;
-        a {
-            color: $lightGrey;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-family: "Gilmer Bold", sans-serif;
-        }
-    }
-    .single-table {
-        margin-right: 15px;
-    }
-}
-
-.arrows-inner {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 40px;
-    span {
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    img {
-        width: 23px;
-        margin: 0 15px;
-    }
-}
+//
+//.home-intro {
+//    h2 {
+//        font-family: 'Dallas Bold', sans-serif;
+//        max-width: 340px; 
+//    }
+//}
+//
+//.intro-p-wrap {
+//    padding-left: 80px;
+//    a {
+//        color: $black;
+//    }
+//}
+//
+//.vertical-line {
+//    height: 250px;
+//    width: 1px;
+//    position: absolute;
+//    background: $darkGrey;
+//    top: -50px;
+//    &.dropped {
+//        margin-top: 35px;
+//    }
+//    &.right {
+//        right: 10px;
+//    }
+//    &.left {
+//        left: 10px;
+//    }
+//}
+//
+//.slider-section {
+//    background-image: url(../img/woodbg.jpg);
+//    background-size: cover;
+//    color: $light;
+//    h2 {
+//        color: $light;
+//    }
+//    .recent-proj-view-all {
+//        margin-bottom: 35px;
+//    }
+//}
+//
+//.recent-projects-slider {
+//    border-left: 1px solid $light;
+//    padding-left: 55px;   
+//    h3 {
+//        font-size: 21px;
+//        margin: 0;
+//    }
+//    .slider-cat {
+//        margin: 2px 0;
+//        a {
+//            color: $lightGrey;
+//            font-size: 14px;
+//            text-transform: uppercase;
+//            font-family: "Gilmer Bold", sans-serif;
+//        }
+//    }
+//    .single-table {
+//        margin-right: 15px;
+//    }
+//}
+//
+//.arrows-inner {
+//    display: flex;
+//    width: 100%;
+//    justify-content: center;
+//    margin-top: 40px;
+//    span {
+//        &:hover {
+//            cursor: pointer;
+//        }
+//    }
+//    img {
+//        width: 23px;
+//        margin: 0 15px;
+//    }
+//}
 
 
 .cta-connect {

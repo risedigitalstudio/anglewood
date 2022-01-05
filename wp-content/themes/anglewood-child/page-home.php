@@ -22,6 +22,46 @@ get_header();
 
 
    
+<section class="hero hero-tables">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Tables</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis voluptas ipsum consequatur illum dolorem, ipsam facere fugit!</p>
+                <a href="<?php echo site_url();?>/tables" class="default-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero hero-slabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Slabs</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis voluptas ipsum consequatur illum dolorem, ipsam facere fugit!</p>
+                <a href="<?php echo site_url();?>/slabs" class="default-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero hero-metal">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Metal Work</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio facilis voluptas ipsum consequatur illum dolorem, ipsam facere fugit!</p>
+                <a href="<?php echo site_url();?>/metal-work" class="default-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php /* ?>
+
 <section class="home-intro sec-pad-lg">
     <div class="container">
         <div class="row">
@@ -187,6 +227,8 @@ get_header();
 </section>
 
 
+<?php */ ?>
+
 <?php get_template_part( 'global-templates/map' ); ?>
 
 
@@ -211,6 +253,8 @@ get_header();
         </div>
     </div>
 </section>
+
+
 
 
 <?php

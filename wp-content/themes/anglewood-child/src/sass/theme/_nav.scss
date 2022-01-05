@@ -1,33 +1,23 @@
-.navbar-dark .navbar-brand {
-    width: 210px;
-    img {
-        width: 100%;
-    }
-}
-
-.bg-primary {
-    background-color: $black !important;
+#main-nav {
+    background: $black;
     position: fixed;
     width: 100%;
     z-index: 999;
+    >.container-fluid {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+img.nav-logo {
+    width: 300px;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: $light; 
-    text-transform: uppercase;
-    font-family: 'Gilmer Bold', sans-serif;
-    font-size: 14px;
-    padding: 0;
-    margin: .5rem;
-    border-bottom: 3px solid $black;
-}
-
-.navbar-dark .navbar-nav .active>.nav-link {
-    color: #fff;
-    border-bottom: 3px solid $purple;
-}
-
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: $light;
-    border-bottom: 3px solid $purple;
+.hamburgerMenu {
+    float: right;
+    margin: 0 0 !important; 
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    top: 13px;
+    position: relative;
 }

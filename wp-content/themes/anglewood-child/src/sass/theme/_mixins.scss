@@ -28,6 +28,33 @@
     @include default-link;
 }
 
+
+
+@mixin default-btn {
+    font-size: 15px;
+    font-family: 'Gilmer Light', sans-serif;
+    text-transform: uppercase;
+    background: $purple;
+    padding: 12px 20px;
+    color: #fff;
+    transition: 0.2s all;
+    margin-top: 24px;
+    display: block;
+    width: 145px;
+    text-align: center;
+    &:hover {
+        text-decoration: none;
+        background: darken($purple, 15%);
+        color: #fff;
+    }
+}
+
+.default-btn {
+    @include default-btn;
+}
+
+
+
 @mixin small-title {
     font-size: 18px;
 }

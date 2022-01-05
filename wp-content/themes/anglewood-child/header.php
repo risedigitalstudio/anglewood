@@ -25,64 +25,77 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
+<!-- ******************* The Navbar Area ******************* -->
+<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+    <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-primary" aria-labelledby="main-nav-label">
+    <nav id="main-nav" aria-labelledby="main-nav-label">
+    <div class="container-fluid">
 
-			<h2 id="main-nav-label" class="sr-only">
-				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
-			</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="main-nav-label" class="sr-only">
+                    <?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
+                </h2>
 
-		<?php if ( 'container' === $container ) : ?>
-			<div class="container">
-		<?php endif; ?>
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-2-white.png" class="nav-logo">
+            </div>
+            <div class="col-md-6">
+                <button aria-label="open" class="hamburgerMenu" id="hamburgerMenu" data-toggle="collapse" data-target="#headerDrawer" aria-expanded="false">
+                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 1.5H26" stroke="white" stroke-width="2"/>
+                    <path d="M0.5 12H26" stroke="white" stroke-width="2"/>
+                    <path d="M0.5 22H26" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
+    </div><!-- .site-navigation -->
+    </nav><!-- .site-navigation -->
 
-						<?php if ( is_front_page() && is_home() ) : ?>
+</div><!-- #wrapper-navbar end -->
 
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
-						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
-						<?php endif; ?>
 
-						<?php
-					} else {
-						the_custom_logo();
-					}
-					?>
-					<!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+<section class="header-drawer" id="headerDrawer">
 
-				<!-- The WordPress Menu goes here -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav ml-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				);
-				?>
-			<?php if ( 'container' === $container ) : ?>
-			</div><!-- .container -->
-			<?php endif; ?>
+    <button title="Close" class="nav-link" aria-label="close" id="drawerClose" data-toggle="collapse" data-target="#headerDrawer" aria-expanded="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9.91304L21.913 0L24 2.08696L14.087 12L24 21.913L21.913 24L12 14.087L2.08696 24L0 21.913L9.91304 12L0 2.08696L2.08696 0L12 9.91304Z" fill="white"/>
+        </svg>
+    </button>
+    
+	<img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-1-grey.png" class="drawer-logo">
 
-		</nav><!-- .site-navigation -->
+	<div class="container-fluid mainNavItems">
+	    <div class="row">
+	        <div class="col-md-12">
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location'  => 'primary',
+                        'container_class' => '',
+                        'container_id'    => '',
+                        'menu_class'      => '',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'depth'           => 2,
+                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                );
+                ?>
+	        </div>
+	        
+	    </div>
+	</div>
+	
+</section>
 
-	</div><!-- #wrapper-navbar end -->
+
+
+
