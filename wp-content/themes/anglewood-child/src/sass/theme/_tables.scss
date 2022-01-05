@@ -1,3 +1,11 @@
+.tables-page {
+    h2 {
+        font-size: 42px;
+    }
+}
+.sub-nav-tables {
+    z-index: 9999;
+}
 .subNavSticky {
     position: fixed;
     top: 80px;
@@ -23,6 +31,27 @@
             background: darken($purple, 15%);
             color: #fff;
             text-decoration: none;
+        }
+    }
+}
+
+.single-forsale-item {
+    img {
+        margin-bottom: 12px;
+    }
+}
+.single-blog-info {
+    h3 {
+        margin-bottom: 8px;
+    }
+    p {
+        margin-bottom: 4px;
+        border-bottom: 1px solid darken($light, 10%);
+        &.price {
+            color: $purple;
+            margin-bottom: 0;
+            font-family: 'Dallas Bold', sans-serif;
+            border-bottom: none;
         }
     }
 }

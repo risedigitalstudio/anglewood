@@ -15152,7 +15152,7 @@ img.nav-logo {
   background: #000;
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 999999;
 }
 .header-drawer .container-fluid, .header-drawer .container-sm, .header-drawer .container-md, .header-drawer .container-lg, .header-drawer .container-xl {
   padding: 20px;
@@ -15183,6 +15183,7 @@ img.nav-logo {
   position: absolute;
   bottom: 10px;
   right: 10px;
+  width: 720px;
 }
 
 .mainNavItems #main-menu {
@@ -15438,6 +15439,39 @@ a.portfolio-img-bg {
   background-size: cover;
 }
 
+.single-portfolio-item {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.single-portfolio-item p {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+.single-portfolio-item .single-blog-date {
+  display: inline;
+  float: left;
+}
+.single-portfolio-item .slider-cat {
+  display: inline;
+  float: left;
+}
+.single-portfolio-item .single-blog-info {
+  display: block;
+  float: left;
+}
+.single-portfolio-item a h3 {
+  margin-bottom: 0;
+  letter-spacing: -0.1px;
+  font-size: 24px;
+}
+.single-portfolio-item a:hover {
+  text-decoration: none;
+}
+.single-portfolio-item a:hover h3 {
+  color: #743dbc;
+}
+
 .arrow-left {
   width: 0;
   height: 0;
@@ -15557,6 +15591,14 @@ a.portfolio-img-bg {
     margin-top: 25px;
   }
 }
+.tables-page h2 {
+  font-size: 42px;
+}
+
+.sub-nav-tables {
+  z-index: 9999;
+}
+
 .subNavSticky {
   position: fixed;
   top: 80px;
@@ -15585,6 +15627,24 @@ a.portfolio-img-bg {
   background: #502a82;
   color: #fff;
   text-decoration: none;
+}
+
+.single-forsale-item img {
+  margin-bottom: 12px;
+}
+
+.single-blog-info h3 {
+  margin-bottom: 8px;
+}
+.single-blog-info p {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e7d7cb;
+}
+.single-blog-info p.price {
+  color: #743dbc;
+  margin-bottom: 0;
+  font-family: "Dallas Bold", sans-serif;
+  border-bottom: none;
 }
 
 .cta-sec {

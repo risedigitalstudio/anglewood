@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </svg>
     </button>
     
-	<img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-1-grey.png" class="drawer-logo">
+	<img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-drawer-grey.png" class="drawer-logo">
 
 	<div class="container-fluid mainNavItems">
 	    <div class="row">

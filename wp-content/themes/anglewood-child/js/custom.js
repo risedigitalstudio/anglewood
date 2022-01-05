@@ -1,8 +1,6 @@
 $ = jQuery;
 
-
 $( document ).ready(function() {
-
     
     AOS.init(
         {
@@ -20,6 +18,14 @@ $( document ).ready(function() {
         $('#headerDrawer').css({'display':'none'});
     })
     
+    $('.scroll').click(function(e){
+        e.preventDefault();
+        var elementClicked= $(this).attr("href");
+        var destination = $(elementClicked).offset().top - 50;
+        $("html:not(:animated), body:not(:animated)").animate({
+            "scrollTop" : destination
+        }, 600);
+    });
     
     
 //      $('.recent-projects-slider').slick({
