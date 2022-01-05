@@ -117,7 +117,7 @@ get_header();
 </section>
 
 
-<?php get_template_part( 'global-templates/cta-light' ); ?>
+<?php get_template_part( 'global-templates/cta' ); ?>
 
 
 <?php

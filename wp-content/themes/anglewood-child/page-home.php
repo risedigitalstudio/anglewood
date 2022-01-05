@@ -13,8 +13,8 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Custom live edge wood &amp; epoxy creations</h1>
-                <p>Elevate any room of your home with functional fine art you can enjoy. At Anglewood, we build with intention and deliver luxury, custom tables designed to enhance everyday living.</p>
+                <h1>Custom live edge wood &amp; epoxy dining tables</h1>
+                <p>Elevate your home with functional fine art you can enjoy. At Anglewood, we build with intention and deliver luxury, custom tables designed to enhance everyday living.</p>
             </div>
         </div>
     </div>

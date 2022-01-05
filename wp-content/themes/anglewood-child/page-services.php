@@ -116,7 +116,7 @@ get_header();
 </section>  
  
 
-<?php get_template_part( 'global-templates/cta-dark' ); ?>
+<?php get_template_part( 'global-templates/cta' ); ?>
 
 
 <?php

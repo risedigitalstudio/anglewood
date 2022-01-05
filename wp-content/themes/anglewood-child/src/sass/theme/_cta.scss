@@ -1,11 +1,12 @@
 .cta-sec {
-    &.light {
-        background: $light;
-        a {
-            color: $black;
-        }
+    background: $purple;
+    h2 {
+        color: $light;
     }
-    &.dark {
-        background: $darkGrey;
-    }
+//    &.light {
+//        background: $light;
+//        a {
+//            color: $black;
+//        }
+//    }
 }

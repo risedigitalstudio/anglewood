@@ -15274,7 +15274,7 @@ h1 {
 }
 
 .home-contact {
-  background: #6e6a67;
+  background: #743dbc;
   color: #f7f2ee;
 }
 .home-contact h2 {
@@ -15433,6 +15433,14 @@ span.number {
   margin-bottom: 75px;
 }
 
+a.portfolio-img-bg {
+  display: block;
+  height: 250px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
 .arrow-left {
   width: 0;
   height: 0;
@@ -15552,14 +15560,11 @@ span.number {
     margin-top: 25px;
   }
 }
-.cta-sec.light {
-  background: #f7f2ee;
+.cta-sec {
+  background: #743dbc;
 }
-.cta-sec.light a {
-  color: #000;
-}
-.cta-sec.dark {
-  background: #6e6a67;
+.cta-sec h2 {
+  color: #f7f2ee;
 }
 
 footer#main-footer {

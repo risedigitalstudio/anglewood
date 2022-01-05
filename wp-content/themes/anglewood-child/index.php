@@ -47,13 +47,14 @@ get_header();
   
                    <div class="col-md-4 single-archive-item">
                         <div class="single-blog-img">
-                            <a href="<?php the_permalink();?>">
-<!--                            <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>-->
-                               <img src="http://placehold.it/600x380">
-                            </a>
+                            <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php if ( get_the_post_thumbnail($post_id) != '' ) {
+                        echo get_the_post_thumbnail_url();} else {
+                        echo catch_that_image();
+                    } ?>"></a>
                            <div class="single-blog-date">
                                <span class="day"><?php echo get_the_date("M"); ?></span>
                                <span class="month"><?php echo get_the_date("d"); ?></span>
+                               <span class="month"><?php echo get_the_date("Y"); ?></span>
                            </div>
                            <p class="slider-cat">
                               <?php 
@@ -64,7 +65,7 @@ get_header();
                             </p>
                         </div>
                         <div class="single-blog-info">
-                            <h3><?php echo get_the_title();?></h3>
+                            <a href="<?php the_permalink();?>"><h3><?php echo get_the_title();?></h3></a>
                         </div>
                    </div>                     
                        
