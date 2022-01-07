@@ -18,6 +18,14 @@ $( document ).ready(function() {
         $('#headerDrawer').css({'display':'none'});
     })
     
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true,
+        wrapAround: true,
+        imagesLoaded: true
+    });
+    
     $('.scroll').click(function(e){
         e.preventDefault();
         var elementClicked= $(this).attr("href");

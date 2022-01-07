@@ -124,10 +124,16 @@ get_header();
 
                    <div class="col-md-4 single-portfolio-item">
                         <div class="single-blog-img">
+                           <?php /* ?>
                             <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php if ( get_the_post_thumbnail($post_id) != '' ) {
-                        echo get_the_post_thumbnail_url();} else {
-                        echo catch_that_image();
-                    } ?>"></a>
+                            echo get_the_post_thumbnail_url();} else {
+                            echo catch_that_image();
+                            } ?>"></a>
+                            <?php */ ?>
+                                                        
+                            <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php get_the_post_thumbnail_url(); ?>"></a>
+                            
+                            
                            <p class="single-blog-date">
                                <span class="day"><?php echo get_the_date("M"); ?></span>
                                <span class="month"><?php echo get_the_date("d"); ?></span>
