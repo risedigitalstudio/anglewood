@@ -39,7 +39,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
                 </h2>
 
-                <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-2-white.png" class="nav-logo">
+                <a href="<?php echo site_url();?>">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-2-white.png" class="nav-logo">
+                </a>
             </div>
             <div class="col-md-6">
                 <button aria-label="open" class="hamburgerMenu" id="hamburgerMenu" data-toggle="collapse" data-target="#headerDrawer" aria-expanded="false">
