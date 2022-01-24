@@ -21,7 +21,7 @@ get_header();
 
 
 <div class="tables-page">
-   
+
 <section class="process-hero hero-padding">
     <div class="container">
         <div class="row">
@@ -126,72 +126,29 @@ get_header();
                 <h2>Portfolio</h2>
             </div>
         </div>
+
+
         <div class="row">
-        
-				<?php
-				if ( have_posts() ) {
+            <?php echo do_shortcode('[searchandfilter id="5302"]'); ?>
+        </div>     
 
-                    
-    
-                    $args = array(
-                        'category_name'  => 'post',
-                        'posts_per_page' => 12
-                    );
+<!--        <div class="row" id="main">-->
+            <?php echo do_shortcode('[searchandfilter id="5302" show="results"]'); ?>
+<!--        </div>  -->
 
-					while ( have_posts($args) ) {
-						the_post();
-                        
-                    ?> 
-  
-                   <div class="col-md-4 alm-item single-portfolio-item">
-                        <div class="single-blog-img">
-                            <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php if ( get_the_post_thumbnail($post_id) != '' ) {
-                                echo get_the_post_thumbnail_url();} else {
-                                echo catch_that_image();
-                            } ?>"></a>
-                          
-                            <?php /* ?>
-                            <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>"></a>
-                            <?php */ ?>
-                          
-                           <p class="single-blog-date">
-                               <span class="day"><?php echo get_the_date("M"); ?></span>
-                               <span class="month"><?php echo get_the_date("d"); ?></span>
-                               <span class="month"><?php echo get_the_date("Y"); ?></span>
-                           </p>
-                           
-                           <p class="slider-cat">
-                             <span class="sep">|</span>
-                              <?php 
-                               $cats = get_the_category(); 
-                               
-                               ?>
-                                <?php echo $cats[0]->name; ?>
-                            </p>
-                        </div>
-                        <div class="single-blog-info">
-                            <a href="<?php the_permalink();?>"><h3><?php echo get_the_title();?></h3></a>
-                        </div>
-                   </div>                     
-                       
-                <?php
-                        
-					}
-				} 
-				?>
+       
+        <?php /* echo do_shortcode('[ajax_load_more id="alm-archive" archive="true" container_type="div" post_type="post" pause="false" scroll="true" posts_per_page="15" offset="12" no_results_text="<div class=\'no-results\'>Sorry, there are no more results</div>" transition_container_classes="row"]'); */ ?>
 
-        
-        </div>
-        
-        
-        <?php echo do_shortcode('[ajax_load_more id="alm-archive" archive="true" container_type="div" post_type="post" pause="false" scroll="true" posts_per_page="12" offset="12" no_results_text="<div class=\'no-results\'>Sorry, there are no more results</div>" transition_container_classes="row"]');?>
+           
 <!--
         <div class="row">
             <div class="col-md-12">
                 <?php understrap_pagination(); ?>
             </div>
         </div>
+   
 -->
+
     </div>
 </section>
 
@@ -314,3 +271,7 @@ get_header();
 
 <?php
 get_footer();
+
+?>
+
+

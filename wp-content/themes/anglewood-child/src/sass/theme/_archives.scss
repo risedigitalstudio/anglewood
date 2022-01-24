@@ -33,6 +33,12 @@ a.portfolio-img-bg {
     .single-blog-info {
         display: block;
         float: left;
+        &.hovered {
+            text-decoration: none;
+            h3 {
+                color: $purple;
+            }
+        }
     }
     a h3 {
         margin-bottom: 40px;

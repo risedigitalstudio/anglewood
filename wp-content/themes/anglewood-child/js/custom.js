@@ -8,6 +8,17 @@ $( document ).ready(function() {
             disable: 'mobile'
         }
     );
+
+    
+    $( ".single-blog-img" ).each(function( index ) {
+      $(this).on('mouseover', function () {
+        $(this).siblings('.single-blog-info').addClass('hovered');
+      })
+
+      $(this).on('mouseout', function () {
+        $(this).siblings('.single-blog-info').removeClass('hovered');
+      })
+    });
     
 
     $('#hamburgerMenu').on('click', function () {
@@ -26,6 +37,22 @@ $( document ).ready(function() {
         imagesLoaded: true
     });
     
+    
+//    start Isotope
+    var $grid = $('.grid-portfolio').isotope({
+      itemSelector: '.single-portfolio-item',
+      layoutMode: 'fitRows'
+    });
+    
+    
+    $('.filter-button-group').on( 'click', 'button', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    
+//    end Isotope
+    
+
     $('.scroll').click(function(e){
         e.preventDefault();
         var elementClicked= $(this).attr("href");

@@ -77,3 +77,33 @@
         color: #fff !important;
     }
 }
+
+
+
+
+/* ---- isotope ---- */
+
+.grid-portfolio {
+  border: 1px solid #333;
+    width: 100%;
+}
+
+/* clear fix */
+.grid-portfolio:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.single-portfolio-item {
+  position: relative;
+  float: left;
+  width: 33%;
+}
+
+.single-portfolio-item > * {
+  margin: 0;
+  padding: 0;
+}

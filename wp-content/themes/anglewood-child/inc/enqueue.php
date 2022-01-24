@@ -32,6 +32,7 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
         wp_enqueue_script( 'aos-scripts', get_stylesheet_directory_uri() . '/aos/aos.js', array(), $js_version, true );
         
         wp_enqueue_script( 'slick-scripts', get_stylesheet_directory_uri() . '/slick/slick.min.js', array(), $js_version, true );
+        wp_enqueue_script( 'isotope-scripts', get_stylesheet_directory_uri() . '/isotope/isotope.pkgd.min.js', array(), $js_version, true );
 		wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom.js', array(), $js_version, true );
 		wp_enqueue_script( 'flickity-scripts', get_stylesheet_directory_uri() . '/flickity/flickity.pkgd.min.js', array(), $js_version, true );
     
