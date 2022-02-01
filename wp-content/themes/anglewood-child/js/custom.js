@@ -103,63 +103,67 @@ $( document ).ready(function() {
     
     
     
-    
-    
-    
-    
-    $(window).scroll(function() {
-        var distance_from_top = $(window).scrollTop();
-    //        console.log(distance_from_top);
 
-        if (distance_from_top >= 448) {
-    //            console.log('down');
-            $('.sub-nav-tables').addClass('subNavSticky');
-        } else {
-            $('.sub-nav-tables').removeClass('subNavSticky');
-        }
-
-    }); 
+//    
+//    $(window).scroll(function() {
+//        var distance_from_top = $(window).scrollTop();
+//    //        console.log(distance_from_top);
+//
+//        if (distance_from_top >= 448) {
+//    //            console.log('down');
+//            $('.sub-nav-tables').addClass('subNavSticky');
+//        } else {
+//            $('.sub-nav-tables').removeClass('subNavSticky');
+//        }
+//
+//    }); 
         
-    $screenHeight = $( window ).height();
+//    $screenHeight = $( window ).height();
 //    $homeHeight = $('#home').height();
 //    
 //    $homeDivStart = 1;
 //    $homeDivEnd = $homeHeight = $('#home').height()  - 96;
-
-    $forSaleStart = $('#for-sale').offset().top -131;
-    $forSaleEnd = $forSaleStart + $('#for-sale').height() -131 + 448;
-
-    $portfolioStart = $('#portfolio').offset().top -131;
-    $portfolioEnd = $portfolioStart + $('#portfolio').height() -131 + 448;
+//
+//    $forSaleStart = $('#for-sale').offset().top -131;
+//    $forSaleEnd = $forSaleStart + $('#for-sale').height() -131 + 448;
+//
+//    $orderingProcessStart = $('#ordering-process').offset().top -131;
+//    $orderingProcessEnd = $orderingProcessStart + $('#ordering-process').height() -131 + 448;
+//    
+//    $portfolioStart = $('#portfolio').offset().top -131;
+//    $portfolioEnd = $portfolioStart + $('#portfolio').height() -131 + 448;
     
-    $faqStart = $('#faq').offset().top -131;
-    $faqEnd = $faqStart + $('#faq').height() -131 + 448;
+//    
+//    $faqStart = $('#faq').offset().top -131;
+//    $faqEnd = $faqStart + $('#faq').height() -131 + 448;
+//    
+//    
+//    $maintenanceStart = $('#maintenance').offset().top -131;
+//    $maintenanceEnd = $maintenanceStart + $('#maintenance').height() -131 + 448;
     
-    $orderingProcessStart = $('#ordering-process').offset().top -131;
-    $orderingProcessEnd = $orderingProcessStart + $('#ordering-process').height() -131 + 448;
     
-    $maintenanceStart = $('#maintenance').offset().top -131;
-    $maintenanceEnd = $maintenanceStart + $('#maintenance').height() -131 + 448;
-    
-    
-    $(window).scroll(function() {
-//        console.log($(this).scrollTop());
-//        console.log('start' + $forSaleStart);
-//        console.log('end' + $forSaleEnd);
-        if ($(this).scrollTop() > $forSaleStart && $(this).scrollTop() < $forSaleEnd) {
-            $('.forSaleLink').addClass('activeNav'); $('.forSaleLink').siblings().removeClass('activeNav');
-        }else if ( $(this).scrollTop() > $portfolioStart && $(this).scrollTop() < $portfolioEnd ){
-            $('.portfolioLink').addClass('activeNav'); $('.portfolioLink').siblings().removeClass('activeNav');
-        } else if ($(this).scrollTop() > $faqStart && $(this).scrollTop() < $faqEnd) {
-            $('.faqLink').addClass('activeNav');
-            $('.faqLink').siblings().removeClass('activeNav');
-        } else if ($(this).scrollTop() > $orderingProcessStart && $(this).scrollTop() < $orderingProcessEnd) {
-            $('.orderingProcessLink').addClass('activeNav'); $('.orderingProcessLink').siblings().removeClass('activeNav');
-        } else if ($(this).scrollTop() > $maintenanceStart && $(this).scrollTop() < $maintenanceEnd) {
-            $('.maintenanceLink').addClass('activeNav'); $('.maintenanceLink').siblings().removeClass('activeNav');
-        }
+//    $(window).scroll(function() {
+//        if ($(this).scrollTop() > $forSaleStart && $(this).scrollTop() < $forSaleEnd) {
+//            $('.forSaleLink').addClass('activeNav'); $('.forSaleLink').siblings().removeClass('activeNav');
+//        } else if ($(this).scrollTop() > $orderingProcessStart && $(this).scrollTop() < $orderingProcessEnd) {
+//            $('.orderingProcessLink').addClass('activeNav'); $('.orderingProcessLink').siblings().removeClass('activeNav'); 
+//        } else if ( $(this).scrollTop() > $portfolioStart && $(this).scrollTop() < $portfolioEnd ){
+//            $('.portfolioLink').addClass('activeNav'); $('.portfolioLink').siblings().removeClass('activeNav');
+//        }
         
-    });
+//        } else if ($(this).scrollTop() > $faqStart && $(this).scrollTop() < $faqEnd) {
+//            $('.faqLink').addClass('activeNav');
+//            $('.faqLink').siblings().removeClass('activeNav');
+//        } 
+//        else if ($(this).scrollTop() > $maintenanceStart && $(this).scrollTop() < $maintenanceEnd) {
+//            $('.maintenanceLink').addClass('activeNav'); $('.maintenanceLink').siblings().removeClass('activeNav');
+//        }
+        
+//    });
+    
+    
+
+    
     
 });
 

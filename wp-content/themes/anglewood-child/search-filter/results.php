@@ -31,33 +31,20 @@ if ( $query->have_posts() )
 {
 	?>
 	
-	Found <?php echo $query->found_posts; ?> Results<br />
-	Page <?php echo $query->query['paged']; ?> of <?php echo $query->max_num_pages; ?><br />
-	
-	<div class="pagination">
-		
-		<div class="nav-previous"><?php next_posts_link( 'Older posts', $query->max_num_pages ); ?></div>
-		<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
-		<?php
-			/* example code for using the wp_pagenavi plugin */
-			if (function_exists('wp_pagenavi'))
-			{
-				echo "<br />";
-				wp_pagenavi( array( 'query' => $query ) );
-			}
-		?>
+	<div class="row">
+	    <div class="col-md-12">
+	        Found <?php echo $query->found_posts; ?> Results<br />
+	    </div>
 	</div>
-	
+	<div class='search-filter-results-list row'>
 	<?php
-	while ($query->have_posts())
-	{
-		$query->the_post();
-		
-		?>
-		
-		
-		
-                   <div class="col-md-4 single-portfolio-item">
+		while ($query->have_posts())
+		{
+			$query->the_post();
+			
+			?>
+			
+                   <div class="col-md-4 single-portfolio-item search-filter-result-item">
                         <div class="single-blog-img">
                             <a href="<?php the_permalink();?>" class="portfolio-img-bg" style="background-image:url(<?php if ( get_the_post_thumbnail($post_id) != '' ) {
                                 echo get_the_post_thumbnail_url();} else {
@@ -86,55 +73,42 @@ if ( $query->have_posts() )
                         <div class="single-blog-info">
                             <a href="<?php the_permalink();?>"><h3><?php echo get_the_title();?></h3></a>
                         </div>
-                   </div>      
-		
-		
-		<?php /*?>
-		<div>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                   </div>   
 			
-			<p><br /><?php the_excerpt(); ?></p>
-			<?php 
-				if ( has_post_thumbnail() ) {
-					echo '<p>';
-					the_post_thumbnail("small");
-					echo '</p>';
-				}
-			?>
-			<p><?php the_category(); ?></p>
-			<p><?php the_tags(); ?></p>
-			<p><small><?php the_date(); ?></small></p>
 			
-		</div>
-		
-		<hr />
-        
-        <?php */ ?>
-        
-		<?php
-	}
+			<?php /* ?>
+			<div class='search-filter-result-item'>
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				
+				<p><br /><?php the_excerpt(); ?></p>
+				<?php 
+					if ( has_post_thumbnail() ) {
+						echo '<p>';
+						the_post_thumbnail("small");
+						echo '</p>';
+					}
+				?>
+				<p><?php the_category(); ?></p>
+				<p><?php the_tags(); ?></p>
+				<p><small><?php the_date(); ?></small></p>
+				
+				<hr />
+			</div>
+			
+			<?php */ ?>
+			
+			<?php
+		}
 	?>
-	
-	
-	Page <?php echo $query->query['paged']; ?> of <?php echo $query->max_num_pages; ?><br />
-	
-	<div class="pagination">
-		
-		<div class="nav-previous"><?php next_posts_link( 'Older posts', $query->max_num_pages ); ?></div>
-		<div class="nav-next"><?php previous_posts_link( 'Newer posts' ); ?></div>
-		<?php
-			/* example code for using the wp_pagenavi plugin */
-			if (function_exists('wp_pagenavi'))
-			{
-				echo "<br />";
-				wp_pagenavi( array( 'query' => $query ) );
-			}
-		?>
 	</div>
-	<?php
+<?php
 }
 else
 {
-	echo "No Results Found";
+	?>
+	<div class='search-filter-results-list' data-search-filter-action='infinite-scroll-end'>
+		<span>End of Results</span>
+	</div>
+	<?php
 }
 ?>

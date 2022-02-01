@@ -57,7 +57,7 @@ get_header();
 </section>  
 
 
-
+<?php /* ?>
 
 <section class="faq sec-pad-lg-bot">
     <div class="container">
@@ -111,6 +111,8 @@ get_header();
         </div>
     </div>
 </section>
+
+<?php */ ?>
 
 </div> <!-- end tables-page -->
 

@@ -36,25 +36,23 @@ get_header();
 
 
 
+<!--
 <section class="sub-nav-tables">
     <div class="container-fluid">
         <div class="row">
             <div class="sub-nav-tables-wrap">
                 <a href="#for-sale" class="scroll forSaleLink" id="forSale">For Sale</a>
                 
-                <a href="#portfolio" class="scroll portfolioLink" id="portfolioTab">Portfolio</a>
-                
-                <a href="#faq" class="scroll faqLink" id="faqTab">FAQ</a>
-                
                 <a href="#ordering-process" class="scroll orderingProcessLink" id="orderingProcess">Order Process</a>
                 
-                <a href="#maintenance" class="scroll maintenanceLink" id="maintenanceTab">Maintenance</a>
+                <a href="#portfolio" class="scroll portfolioLink" id="portfolioTab">Portfolio</a>
             </div>
         </div>
     </div>
 </section>
+-->
    
-<section class="for-sale sec-pad-lg" id="for-sale">
+<section class="for-sale sec-pad" id="for-sale">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -79,8 +77,9 @@ get_header();
 
             
                    <div class="col-md-4 single-forsale-item">
-                        <div class="single-blog-img">
+                        <div class="single-blog-img <?php if (get_field('sold')) {echo 'sold';} ?>">
                             <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+                            <?php if (get_field('sold')) {echo '<div class="sold-tag">Sold</div>';} ?>
                         </div>
                         <div class="single-blog-info">
                            <p class="price"><?php echo get_field('price');?></p>
@@ -117,99 +116,7 @@ get_header();
 </section>
  
  
- 
- 
-<section class="portfolio sec-pad-lg" id="portfolio">
-    <div class="container">
-        <div class="row sec-pad-bot">
-            <div class="col-md-12">
-                <h2>Portfolio</h2>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <?php echo do_shortcode('[searchandfilter id="5302"]'); ?>
-        </div>     
-
-<!--        <div class="row" id="main">-->
-            <?php echo do_shortcode('[searchandfilter id="5302" show="results"]'); ?>
-<!--        </div>  -->
-
-       
-        <?php /* echo do_shortcode('[ajax_load_more id="alm-archive" archive="true" container_type="div" post_type="post" pause="false" scroll="true" posts_per_page="15" offset="12" no_results_text="<div class=\'no-results\'>Sorry, there are no more results</div>" transition_container_classes="row"]'); */ ?>
-
-           
-<!--
-        <div class="row">
-            <div class="col-md-12">
-                <?php understrap_pagination(); ?>
-            </div>
-        </div>
-   
--->
-
-    </div>
-</section>
-
-
-
-
-
-<section class="faq sec-pad-lg" id="faq">
-    <div class="container">
-        <div class="row sec-pad-bot">
-            <div class="col-md-12">
-                <h2>FAQ</h2>
-            </div>
-        </div>        
-        <div class="row">
-            <div class="col-md-12">
-                <div class="accordian-container">
-                    <?php
-                    $args = array (
-                    'post_type' => array ('faq_list'),
-                    'orderby' => array( 'menu_order' => 'DESC'),
-                    'meta_key' => 'type',
-                    'meta_value' => 'Custom Work',
-                    'posts_per_page' => -1
-                    );
-                    $faqCustomWorkQuery = new WP_Query($args);
-                    ?>
-
-
-                    <?php while ( $faqCustomWorkQuery->have_posts() ) : $faqCustomWorkQuery->the_post();?>
-
-                          <div class="set">
-                            <a href="#" class="set-a">
-                              <div class="title"><?php echo the_title();?></div>
-                              <i class="minus" style="display:none;">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21.272 10.7278L0.183691 10.7278" stroke="black"/>
-                                </svg>
-                              </i>
-                              <i class="plus" style="display: block;">
-                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.728 21.2721V0.183813" stroke="black"/>
-                                <path d="M21.272 10.7278L0.183691 10.7278" stroke="black"/>
-                                </svg>
-                              </i>
-                            </a>
-                            <div class="content justify">
-                              <?php echo the_content();?>
-                            </div>
-                          </div>
-
-                    <?php endwhile; ?>
-
-                    <?php wp_reset_postdata(); ?> 
-            </div>
-            </div>
-        </div>
-    </div>
-</section>
- 
- 
+ <?php /* ?>
 <section class="the-process sec-pad-lg" id="ordering-process">
     <div class="container">
             <div class="row sec-pad-bot">
@@ -255,14 +162,43 @@ get_header();
     </div>
 </section>
  
-  
-<section class="maintenance sec-pad-lg" id="maintenance">
+ <?php */ ?>
+ 
+ 
+<section class="portfolio sec-pad-lg" id="portfolio">
     <div class="container">
-        <div class="row">
-            <h2>Maintenance</h2>
+        <div class="row sec-pad-bot">
+            <div class="col-md-12">
+                <h2>Portfolio</h2>
+            </div>
         </div>
+
+
+        <div class="row">
+            <?php echo do_shortcode('[searchandfilter id="5302"]'); ?>
+        </div>     
+
+<!--        <div class="row" id="main">-->
+            <?php echo do_shortcode('[searchandfilter id="5302" show="results"]'); ?>
+<!--        </div>  -->
+
+       
+        <?php /* echo do_shortcode('[ajax_load_more id="alm-archive" archive="true" container_type="div" post_type="post" pause="false" scroll="true" posts_per_page="15" offset="12" no_results_text="<div class=\'no-results\'>Sorry, there are no more results</div>" transition_container_classes="row"]'); */ ?>
+
+           
+<!--
+        <div class="row">
+            <div class="col-md-12">
+                <?php /* understrap_pagination(); */ ?>
+            </div>
+        </div>
+   
+-->
+
     </div>
 </section>
+ 
+
 
 </div> <!-- end tables-page -->
 
