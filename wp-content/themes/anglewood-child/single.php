@@ -17,6 +17,7 @@ get_header();
             <div class="col-md-12">
 					<header class="page-header">
                         <h1 class="page-title"><?php the_title(); ?></h1>
+                        <p class="single-date"><?php echo get_the_date();?></p>
 					</header><!-- .page-header -->
             </div>
         </div>
@@ -27,23 +28,15 @@ get_header();
 <section class="single-portfolio sec-pad">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 offset-md-2">
 
 				<?php
 				while ( have_posts() ) {
 					the_post();
-					get_template_part( 'loop-templates/content', 'single' );
+					the_content();
 //					understrap_post_nav();
 				}
 				?>
-
-			<!-- Do the right sidebar check -->
-			
-
-            </div>
-            <div class="col-md-4">
-                <h3>More x cat posts</h3>
-                
             </div>
         </div>
         <div class="row">

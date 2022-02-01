@@ -175,7 +175,9 @@ get_header();
 
 
         <div class="row">
-            <?php echo do_shortcode('[searchandfilter id="5302"]'); ?>
+            <div class="col-md-12">
+                <?php echo do_shortcode('[searchandfilter id="5302"]'); ?>
+            </div>
         </div>     
 
 <!--        <div class="row" id="main">-->

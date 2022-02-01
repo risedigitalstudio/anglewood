@@ -15197,8 +15197,8 @@ img.nav-logo {
   font-family: "Dallas Bold", sans-serif;
   letter-spacing: -15%;
   color: #fff;
-  font-size: 6vw;
-  line-height: 4.5vw;
+  font-size: 5.6vw;
+  line-height: 4.1vw;
 }
 .mainNavItems #main-menu li a:hover {
   color: #743dbc;
@@ -15441,6 +15441,13 @@ a.portfolio-img-bg {
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.single-date {
+  font-family: "Gilmer Bold", sans-serif;
+  color: #bcb4b2;
+  font-size: 18px;
+  margin-top: 18px;
 }
 
 .single-portfolio-item {
@@ -15704,29 +15711,65 @@ a.portfolio-img-bg {
   color: #fff !important;
 }
 
-/* ---- isotope ---- */
-.grid-portfolio {
-  border: 1px solid #333;
+.portfolio form ul {
   width: 100%;
-}
-
-/* clear fix */
-.grid-portfolio:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* ---- .element-item ---- */
-.single-portfolio-item {
-  position: relative;
-  float: left;
-  width: 33%;
-}
-
-.single-portfolio-item > * {
-  margin: 0;
   padding: 0;
+}
+.portfolio form ul li {
+  float: left;
+}
+.portfolio .searchandfilter ul li li {
+  padding: 0 0;
+}
+.portfolio .sf-field-submit input[type=submit] {
+  font-size: 15px;
+  font-family: "Gilmer Light", sans-serif;
+  text-transform: uppercase;
+  background: #743dbc;
+  padding: 12px 20px;
+  color: #fff;
+  transition: 0.2s all;
+  margin-top: 24px;
+  display: block;
+  width: 145px;
+  text-align: center;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  margin-left: 18px;
+}
+.portfolio .sf-field-submit input[type=submit]:hover {
+  text-decoration: none;
+  background: #502a82;
+  color: #fff;
+}
+.portfolio .sf-field-category {
+  margin-right: 18px;
+}
+.portfolio .sf-field-category .sf-input-select {
+  border-radius: 0;
+}
+.portfolio .searchandfilter select.sf-input-select {
+  padding: 10px 10px;
+  border-radius: 0;
+}
+.portfolio .sf_date_field li:first-of-type {
+  margin-right: 15px;
+}
+.portfolio .sf_date_field .sf-datepicker {
+  padding: 10px 10px;
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #767676;
+}
+
+.search-filter-results .row:first-of-type {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.search-filter-results-list {
+  margin-top: 20px;
 }
 
 .visit-slab-store {

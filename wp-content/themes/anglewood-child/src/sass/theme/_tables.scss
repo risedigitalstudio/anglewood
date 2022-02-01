@@ -101,31 +101,58 @@
 }
 
 
-
-
-/* ---- isotope ---- */
-
-.grid-portfolio {
-  border: 1px solid #333;
-    width: 100%;
+.portfolio {
+    form ul {
+        width: 100%;
+        padding: 0;
+        li {
+            float: left;
+        }
+    }
+    .searchandfilter ul li li {
+        padding: 0 0;
+    }
+    
+    .sf-field-submit input[type=submit]{
+        @include default-btn;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        margin-left: 18px;
+    }
+    
+    .sf-field-category {
+        margin-right: 18px;
+        .sf-input-select {
+            border-radius: 0;
+        }
+    }
+    
+    .searchandfilter select.sf-input-select {
+        padding: 10px 10px;
+        border-radius: 0;
+    }
+    
+    .sf_date_field {
+        li:first-of-type {
+            margin-right: 15px;
+        }
+        .sf-datepicker {
+            padding: 10px 10px;
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid #767676;
+        }
+    }
 }
 
-/* clear fix */
-.grid-portfolio:after {
-  content: '';
-  display: block;
-  clear: both;
+.search-filter-results {
+    .row:first-of-type {
+        font-size: 11px;
+        text-transform: uppercase;
+    }
 }
 
-/* ---- .element-item ---- */
-
-.single-portfolio-item {
-  position: relative;
-  float: left;
-  width: 33%;
-}
-
-.single-portfolio-item > * {
-  margin: 0;
-  padding: 0;
+.search-filter-results-list {
+    margin-top: 20px;
 }
